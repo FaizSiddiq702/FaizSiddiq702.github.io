@@ -41,3 +41,10 @@ body{overflow-x:clip}
 .contact-email{color:#90390f;border-color:#ad430e66}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:#b95019}
 .work-section button:focus-visible{outline-color:var(--accent-bright)}
+
+/* Custom F monogram: consistent header, footer, and favicon. */
+.brand{display:inline-flex;align-items:center;letter-spacing:0;line-height:1;border-radius:14px;transition:transform .2s}
+.brand:hover{transform:translateY(-2px)}
+.brand-monogram{display:block;width:46px;height:46px;filter:drop-shadow(0 3px 5px #00000012)}
+.footer .brand-monogram{width:36px;height:36px}
+@media(max-width:580px){.header .brand-monogram{width:39px;height:39px}}
